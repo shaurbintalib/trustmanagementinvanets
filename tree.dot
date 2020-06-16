@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="tasks_from_others <= 555.5\ngini = 0.53\nsamples = 319\nvalue = [45, 311, 156]\nclass = 1", fillcolor="#39e5816f"] ;
+1 [label="others_failed <= 98.0\ngini = 0.38\nsamples = 249\nvalue = [45, 309, 48]\nclass = 1", fillcolor="#39e581bc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="other_total_comp_time <= 149.94\ngini = 0.32\nsamples = 221\nvalue = [19, 292, 48]\nclass = 1", fillcolor="#39e581c8"] ;
+1 -> 2 ;
+3 [label="gini = 0.17\nsamples = 198\nvalue = [19, 288, 10]\nclass = 1", fillcolor="#39e581e6"] ;
+2 -> 3 ;
+4 [label="gini = 0.17\nsamples = 23\nvalue = [0, 4, 38]\nclass = 2", fillcolor="#8139e5e4"] ;
+2 -> 4 ;
+5 [label="others_completed <= 209.0\ngini = 0.48\nsamples = 28\nvalue = [26, 17, 0]\nclass = 0", fillcolor="#e5813958"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 18\nvalue = [25, 0, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+5 -> 6 ;
+7 [label="gini = 0.1\nsamples = 10\nvalue = [1, 17, 0]\nclass = 1", fillcolor="#39e581f0"] ;
+5 -> 7 ;
+8 [label="other_total_comp_time <= 135.89\ngini = 0.04\nsamples = 70\nvalue = [0, 2, 108]\nclass = 2", fillcolor="#8139e5fa"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1", fillcolor="#39e581ff"] ;
+8 -> 9 ;
+10 [label="tasks_from_others <= 597.0\ngini = 0.02\nsamples = 69\nvalue = [0, 1, 108]\nclass = 2", fillcolor="#8139e5fd"] ;
+8 -> 10 ;
+11 [label="gini = 0.07\nsamples = 16\nvalue = [0, 1, 25]\nclass = 2", fillcolor="#8139e5f5"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 53\nvalue = [0, 0, 83]\nclass = 2", fillcolor="#8139e5ff"] ;
+10 -> 12 ;
+}
